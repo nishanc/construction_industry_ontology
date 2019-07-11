@@ -1,1 +1,2 @@
-"# Construction Industry Ontology" 
+# Construction Industry Ontology
+![Image](image.png) 
