@@ -1,0 +1,3342 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/construction.owl#"
+     xml:base="http://www.semanticweb.org/construction.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:construction="http://www.semanticweb.org/construction.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/construction.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#accessTender -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/construction.owl#accessTender">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#getQuotation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/construction.owl#getQuotation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#hasBuyer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/construction.owl#hasBuyer">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/construction.owl#isBuyerOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#hasCost -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/construction.owl#hasCost">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#hasDistance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/construction.owl#hasDistance">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/construction.owl#hasLocation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#hasSupplier -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/construction.owl#hasSupplier">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/construction.owl#isSupplierOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#hasTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/construction.owl#hasTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#isBuyerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/construction.owl#isBuyerOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#isSupplierOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/construction.owl#isSupplierOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/construction.owl#address">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#Buyer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#ConstructionMarket"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#ProfessionalServiceProvider"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#Supplier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#city -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/construction.owl#city">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#ConstructionMarket"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#Supplier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/construction.owl#email">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#Buyer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#ProfessionalServiceProvider"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#Supplier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#identifier -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/construction.owl#identifier">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#Buyer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#ConstructionMarket"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#ProfessionalServiceProvider"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#Quotation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#Supplier"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#Tenders"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Name of the company, business</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#phone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/construction.owl#phone">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#Buyer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#ProfessionalServiceProvider"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#Supplier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#registrationNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/construction.owl#registrationNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#Buyer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#ConstructionMarket"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#ProfessionalServiceProvider"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#Supplier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#started -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/construction.owl#started">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#Buyer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#Supplier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/construction.owl#type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#Buyer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#Supplier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Academic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Academic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Academic_and_Professional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Academic_and_Professional -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Academic_and_Professional">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Acoustic_Insulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Acoustic_Insulation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Specialized_Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Air_and_Noise_Pollution_Control_System -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Air_and_Noise_Pollution_Control_System">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Specialized_Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Airport_Construction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Airport_Construction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Major_Constructions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Aluminium_Glass_and_Finishes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Aluminium_Glass_and_Finishes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Fabrications_Installations_and_Wood_works"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Ampara -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Ampara">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Eastern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Anuradhapura -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Anuradhapura">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#North_Central"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/construction.owl#Polonnaruwa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Apartments -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Apartments">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Major_Constructions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Architectural_Designing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Architectural_Designing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Academic_and_Professional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Architecture_and_Planning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Architecture_and_Planning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Resources"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Backup_Power_systems -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Backup_Power_systems">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Mechanical_Electrical_and_Plumbing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Badulla -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Badulla">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Uva"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/construction.owl#Monaragala"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Bathware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Bathware">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Batticaloa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Batticaloa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Eastern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Block_Paving -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Block_Paving">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Fabrications_Installations_and_Wood_works"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Boilers_and_Steam_Generators -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Boilers_and_Steam_Generators">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Mechanical_Electrical_and_Plumbing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Bridge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Bridge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Major_Constructions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Building_Maintenance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Building_Maintenance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Academic_and_Professional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Building_Management_Systems -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Building_Management_Systems">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Low_Voltage_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Buildings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Buildings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Major_Constructions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Buyer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Buyer">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#accessTender"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#Tenders"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#getQuotation"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#Quotation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#isBuyerOf"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Equipments"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Machinery"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Materials"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Products"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Resources"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Services"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Tools"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#CCTV_Surveillance_Systems -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#CCTV_Surveillance_Systems">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Low_Voltage_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Carpentry_Tools -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Carpentry_Tools">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Equipments"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Carpentry_and_Joinery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Carpentry_and_Joinery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Fabrications_Installations_and_Wood_works"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Ceiling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Ceiling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Fabrications_Installations_and_Wood_works"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Cement_Products -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Cement_Products">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Cement_and_Cement_Products -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Cement_and_Cement_Products">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Materials"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Cement_and_Concrete -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Cement_and_Concrete">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Machinery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Central -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Central">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Colombo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Colombo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Western"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Commercial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Commercial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#General_Constructions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Concrete_Compression_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Concrete_Compression_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Quality_and_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#ConstructionMarket -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#ConstructionMarket"/>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Construction_Chemicals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Construction_Chemicals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Materials"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Construction_Site_Tools -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Construction_Site_Tools">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Equipments"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Construction_Steel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Construction_Steel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Materials"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Consultancy_Services -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Consultancy_Services">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Academic_and_Professional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Container_Conversions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Container_Conversions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Fabrications_Installations_and_Wood_works"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Cooperations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Cooperations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Local"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/construction.owl#Household"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#CostRange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#CostRange">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#ValuePartition"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#High"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Low"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Medium"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Crack_Surveying_and_Monitoring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Crack_Surveying_and_Monitoring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Quality_and_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Crushing_Blasting_and_Demolition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Crushing_Blasting_and_Demolition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Machinery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Cutting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Cutting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Equipments"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Data_and_Telephone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Data_and_Telephone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Low_Voltage_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Day-lighting_and_Shading -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Day-lighting_and_Shading">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Specialized_Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Demolition_and_Clearing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Demolition_and_Clearing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Specialized_Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#DistanceRange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#DistanceRange">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#ValuePartition"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Nearest"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#WithinDistrict"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Distributors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Distributors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Cooperations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Doors_Windows_and_Accessories -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Doors_Windows_and_Accessories">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Drafting_and_Plotting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Drafting_and_Plotting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Academic_and_Professional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Dredging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Dredging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Geotechnical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Drilling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Drilling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Equipments"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Dry_Film -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Dry_Film">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Quality_and_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Earth_Moving_and_Compaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Earth_Moving_and_Compaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Machinery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Earth_Retaining_and_Soil_Nailing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Earth_Retaining_and_Soil_Nailing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Geotechnical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Eastern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Eastern">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Electrical_Installations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Electrical_Installations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Mechanical_Electrical_and_Plumbing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Electrical_and_Power -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Electrical_and_Power">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Materials"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#EndingSoon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#EndingSoon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#TimeRange"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/construction.owl#NewlyListed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Engineers_Managers_and_Consultants -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Engineers_Managers_and_Consultants">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Resources"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Equipments -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Equipments">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#ConstructionMarket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#hasBuyer"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#Buyer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#hasLocation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#hasSupplier"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#Supplier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Estimating_and_Cost_Management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Estimating_and_Cost_Management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Resources"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Estimation_Contract_Management_and_Quantity_Surveying -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Estimation_Contract_Management_and_Quantity_Surveying">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Academic_and_Professional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Fabrications_Installations_and_Wood_works -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Fabrications_Installations_and_Wood_works">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#FamilyOffice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#FamilyOffice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Buyer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Finishing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Finishing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Materials"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Fire_Detection_and_Protection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Fire_Detection_and_Protection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Mechanical_Electrical_and_Plumbing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Flooring_and_Finishing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Flooring_and_Finishing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Flooring_and_Walls -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Flooring_and_Walls">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Fabrications_Installations_and_Wood_works"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Foriegn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Foriegn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Supplier"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/construction.owl#Local"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Formwork_Shuttering_and_Scaffoldings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Formwork_Shuttering_and_Scaffoldings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Equipments"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Furniture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Furniture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Furniture_Fixtures_and_Equipment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Furniture_Fixtures_and_Equipment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Fabrications_Installations_and_Wood_works"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Galle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Galle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Southern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Gampaha -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Gampaha">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Western"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Gardening_and_Landscaping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Gardening_and_Landscaping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Gardening_and_Outdoor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Gardening_and_Outdoor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Equipments"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Gas_Liquid_Piping_Systems -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Gas_Liquid_Piping_Systems">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Mechanical_Electrical_and_Plumbing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#General_Constructions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#General_Constructions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Geotechnical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Geotechnical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Glass_Stainless_Steel_and_Aluminium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Glass_Stainless_Steel_and_Aluminium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Materials"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Grouting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Grouting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Specialized_Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Groynes_and_Revetments -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Groynes_and_Revetments">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Specialized_Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#HVAC_Systems -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#HVAC_Systems">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Mechanical_Electrical_and_Plumbing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#HVAC_and_Mechanical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#HVAC_and_Mechanical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Hambantota -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Hambantota">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Southern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Hand_Tools -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Hand_Tools">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Equipments"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Hardware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Hardware">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Materials"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#High -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#High">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#CostRange"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Highway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Highway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Major_Constructions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#HoldingCompany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#HoldingCompany">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Buyer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Homes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Homes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#General_Constructions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Hotels -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Hotels">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#General_Constructions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#House_Plans -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#House_Plans">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Academic_and_Professional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Household -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Household">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Local"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Housing_Loans -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Housing_Loans">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Academic_and_Professional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Importers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Importers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Cooperations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Impregnation_Treatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Impregnation_Treatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Specialized_Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Inclinometers_installation_and_monitoring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Inclinometers_installation_and_monitoring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Quality_and_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Industrial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Industrial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Major_Constructions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Infrastructure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Infrastructure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Major_Constructions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Insurance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Insurance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Academic_and_Professional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Interior_Deco -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Interior_Deco">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#General_Constructions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Interior_Decor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Interior_Decor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Interior_Designing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Interior_Designing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Academic_and_Professional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Irrigation_and_Drainage_Canals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Irrigation_and_Drainage_Canals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Specialized_Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Jaffna -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Jaffna">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Northern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Kalutara -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Kalutara">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Western"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Kandy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Kandy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Central"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Kegalle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Kegalle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Sabaragamuwa"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/construction.owl#Ratnapura"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Kilinochchi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Kilinochchi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Northern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Kurunegala -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Kurunegala">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#North_Western"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/construction.owl#Puttalam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Laboratory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Laboratory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Quality_and_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Land_Surveying -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Land_Surveying">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Academic_and_Professional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Landscaping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Landscaping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Specialized_Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Legal_and_Local_Authority_Approvals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Legal_and_Local_Authority_Approvals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Academic_and_Professional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Lifting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Lifting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Machinery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Lifts_Escalators_and_Travellators -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Lifts_Escalators_and_Travellators">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Mechanical_Electrical_and_Plumbing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Lighting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Lighting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Lightning_Protection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Lightning_Protection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Mechanical_Electrical_and_Plumbing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Load_Test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Load_Test">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Quality_and_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Local -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Local">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Supplier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Low -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Low">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#CostRange"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Low_Voltage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Low_Voltage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Low_Voltage_Systems -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Low_Voltage_Systems">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Machine_Installation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Machine_Installation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Fabrications_Installations_and_Wood_works"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Machinery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Machinery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#ConstructionMarket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#hasBuyer"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#Buyer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#hasLocation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#hasSupplier"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#Supplier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Major_Constructions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Major_Constructions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Mannar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Mannar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Northern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Manpower_Outsourcing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Manpower_Outsourcing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Academic_and_Professional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Manufacturers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Manufacturers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Cooperations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Marine_Engineering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Marine_Engineering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Major_Constructions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Matale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Matale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Central"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Matara -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Matara">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Southern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Materials -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Materials">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#ConstructionMarket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#hasBuyer"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#Buyer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#hasLocation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#hasSupplier"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#Supplier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Measuring_Tools -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Measuring_Tools">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Equipments"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Mechanical_Electrical_and_Plumbing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Mechanical_Electrical_and_Plumbing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Medium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Medium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#CostRange"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Mining -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Mining">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Geotechnical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Model_Design -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Model_Design">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Academic_and_Professional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Monaragala -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Monaragala">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Uva"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Moulding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Moulding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Fabrications_Installations_and_Wood_works"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Mullaitivu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Mullaitivu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Northern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Nearest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Nearest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#DistanceRange"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/construction.owl#WithinDistrict"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#NewlyListed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#NewlyListed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#TimeRange"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Noise_Level_Monitoring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Noise_Level_Monitoring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Quality_and_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Non-destructive_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Non-destructive_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Quality_and_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Non_Skilled_Workers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Non_Skilled_Workers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Resources"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#North_Central -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#North_Central">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#North_Western -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#North_Western">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Northern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Northern">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Nuwara_Eliya -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Nuwara_Eliya">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Central"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Other_Products -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Other_Products">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#PA_and_Pipe_Music_Systems -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#PA_and_Pipe_Music_Systems">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Low_Voltage_Systems"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#hasCost"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#High"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#hasSupplier"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#Vendors"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#hasTime"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#DistanceRange"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#hasTime"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#NewlyListed"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Painting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Painting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Specialized_Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Paints -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Paints">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Materials"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Pantry_Fittings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Pantry_Fittings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Partition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Partition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Fabrications_Installations_and_Wood_works"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Pest_Control -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Pest_Control">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Specialized_Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Piezometer_installation_and_monitoring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Piezometer_installation_and_monitoring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Quality_and_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Pile_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Pile_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Quality_and_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Piling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Piling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Geotechnical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Pipe_Laying -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Pipe_Laying">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Specialized_Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Plumbing_Products -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Plumbing_Products">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Plumbing_and_Drainage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Plumbing_and_Drainage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Mechanical_Electrical_and_Plumbing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Plumbing_and_Piping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Plumbing_and_Piping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Materials"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Polonnaruwa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Polonnaruwa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#North_Central"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Ponds_Pools_and_Water_Features -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Ponds_Pools_and_Water_Features">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Power_Machines -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Power_Machines">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Machinery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Pristine_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Pristine_Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Specialized_Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#PrivateEquity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#PrivateEquity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Buyer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Products -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Products">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#ConstructionMarket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#hasBuyer"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#Buyer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#hasLocation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#hasSupplier"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#Supplier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#ProfessionalServiceProvider -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#ProfessionalServiceProvider"/>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Project_Management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Project_Management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Academic_and_Professional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Properties_and_Lands -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Properties_and_Lands">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Property_Management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Property_Management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Specialized_Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Pullout -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Pullout">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Quality_and_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Puttalam -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Puttalam">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#North_Western"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Quality_Control -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Quality_Control">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Quality_and_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Quality_and_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Quality_and_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Quotation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Quotation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Rain_Fall_Data_Solutions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Rain_Fall_Data_Solutions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Specialized_Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Ratnapura -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Ratnapura">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Sabaragamuwa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Raw_Materials -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Raw_Materials">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Materials"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Rebound_Hammer_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Rebound_Hammer_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Quality_and_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Renovation_Retrofitting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Renovation_Retrofitting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Specialized_Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Resources -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Resources">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#ConstructionMarket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#hasBuyer"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#Buyer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#hasLocation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#hasSupplier"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#Supplier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Road_Construction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Road_Construction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Machinery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Road_Marking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Road_Marking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Specialized_Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Rock_Blasting_Services -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Rock_Blasting_Services">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Geotechnical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Roofing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Roofing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Fabrications_Installations_and_Wood_works"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Sabaragamuwa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Sabaragamuwa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Safety -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Safety">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Satellite_Cable_TV_Systems -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Satellite_Cable_TV_Systems">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Low_Voltage_Systems"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Security_Systems -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Security_Systems">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Services -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Services">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#ConstructionMarket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#hasBuyer"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#Buyer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#hasLocation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#hasSupplier"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#Supplier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Settlement_monitoring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Settlement_monitoring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Quality_and_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Skilled_Workers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Skilled_Workers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Resources"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Slab -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Slab">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Specialized_Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Soaring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Soaring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Specialized_Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Soil_Investigation_and_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Soil_Investigation_and_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Quality_and_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Soil_Stabilization_Ground_Improvements_and_Excavation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Soil_Stabilization_Ground_Improvements_and_Excavation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Geotechnical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Solar_and_Renewable_energy_Solutions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Solar_and_Renewable_energy_Solutions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Mechanical_Electrical_and_Plumbing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Sound_Insulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Sound_Insulation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Specialized_Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Southern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Southern">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Specialized_Garden -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Specialized_Garden">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Specialized_Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Specialized_Products -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Specialized_Products">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Specialized_Services -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Specialized_Services">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Stainless_Steel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Stainless_Steel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Steel_Aluminium_Fabrication_Tools -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Steel_Aluminium_Fabrication_Tools">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Equipments"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Steel_Building -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Steel_Building">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#General_Constructions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Steel_fabrications_and_Installations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Steel_fabrications_and_Installations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Fabrications_Installations_and_Wood_works"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Storage_Tanks_and_Pressure_Vessels -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Storage_Tanks_and_Pressure_Vessels">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Major_Constructions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Storm_Water_Disposal_and_Land_Drainage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Storm_Water_Disposal_and_Land_Drainage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Specialized_Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#StrategicBuyers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#StrategicBuyers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Buyer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Structural_and_Civil_Engineering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Structural_and_Civil_Engineering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Academic_and_Professional"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Supplier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Supplier">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#accessTender"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#Tenders"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#getQuotation"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#Quotation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#isSupplierOf"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Equipments"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Machinery"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Materials"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Products"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Resources"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Services"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Tools"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Swimming_Pools_Ponds_and_water_features -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Swimming_Pools_Ponds_and_water_features">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Specialized_Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Telecommunication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Telecommunication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Major_Constructions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Tenders -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Tenders"/>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Testting_Equpments -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Testting_Equpments">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Equipments"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Tools"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Thermal_Insulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Thermal_Insulation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Specialized_Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Timber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Timber">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Materials"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Timber_Products -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Timber_Products">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#TimeRange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#TimeRange">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#ValuePartition"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#EndingSoon"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#NewlyListed"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Tools -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Tools">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#ConstructionMarket"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#hasBuyer"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#Buyer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#hasLocation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#hasSupplier"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#Supplier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Transmission_Grid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Transmission_Grid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Mechanical_Electrical_and_Plumbing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Transmission_Line -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Transmission_Line">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Mechanical_Electrical_and_Plumbing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Specialized_Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Transportation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Transportation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Machinery"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Trincomalee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Trincomalee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Eastern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#TurnKey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#TurnKey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#General_Constructions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Uva -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Uva">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#ValuePartition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#ValuePartition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Vavuniya -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Vavuniya">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Northern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Vendors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Vendors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Cooperations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Vibration_Monitoring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Vibration_Monitoring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Quality_and_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Wall_Deco -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Wall_Deco">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Ware_House -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Ware_House">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#General_Constructions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Wastewater_Sewerage_and_Garbage_Treatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Wastewater_Sewerage_and_Garbage_Treatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Mechanical_Electrical_and_Plumbing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Water_supply_and_Sewerage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Water_supply_and_Sewerage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Major_Constructions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Waterproofing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Waterproofing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Specialized_Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Western -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Western">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Wholesalers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Wholesalers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Cooperations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#WithinDistrict -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#WithinDistrict">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#DistanceRange"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Wood_Carvings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#Wood_Carvings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Specialized_Services"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#3D_Visualization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/construction.owl#3D_Visualization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/construction.owl#Academic_and_Professional"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Battaramulla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#Battaramulla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Colombo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Below5K -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#Below5K">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Low"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#C001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#C001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Commercial"/>
+        <hasCost rdf:resource="http://www.semanticweb.org/construction.owl#10K-30K"/>
+        <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shopping Complex</identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#C002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#C002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Commercial"/>
+        <hasCost rdf:resource="http://www.semanticweb.org/construction.owl#1K-2K"/>
+        <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Building Contraction</identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Colombo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#Colombo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Colombo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#D001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#D001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Distributors"/>
+        <hasLocation rdf:resource="http://www.semanticweb.org/construction.owl#Colombo"/>
+        <isSupplierOf rdf:resource="http://www.semanticweb.org/construction.owl#C001"/>
+        <isSupplierOf rdf:resource="http://www.semanticweb.org/construction.owl#Ho001"/>
+        <address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">61, Rodrigo Place, Colombo 15, Sri Lanka</address>
+        <city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Colombo 15</city>
+        <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unieff@sltnet.lk</email>
+        <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unieff (Pvt) Ltd</identifier>
+        <phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0114884860</phone>
+        <registrationNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NB0055</registrationNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Dehiwala -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#Dehiwala">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Colombo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#F001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#F001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#FamilyOffice"/>
+        <isBuyerOf rdf:resource="http://www.semanticweb.org/construction.owl#Wh002"/>
+        <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nishan Chathuranga</identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#F002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#F002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#FamilyOffice"/>
+        <isBuyerOf rdf:resource="http://www.semanticweb.org/construction.owl#Ho001"/>
+        <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pasindu Bawantha</identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Gampaha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#Gampaha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Gampaha"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#H001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#H001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Homes"/>
+        <hasCost rdf:resource="http://www.semanticweb.org/construction.owl#2M-5M"/>
+        <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RESIDENTIAL AND HOUSING PROJECTS</identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#H002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#H002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Homes"/>
+        <hasCost rdf:resource="http://www.semanticweb.org/construction.owl#1M-2M"/>
+        <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Housing Constructions</identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#HC001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#HC001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#HoldingCompany"/>
+        <isBuyerOf rdf:resource="http://www.semanticweb.org/construction.owl#H001"/>
+        <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mithila Inc.</identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Ho001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#Ho001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Hotels"/>
+        <hasCost rdf:resource="http://www.semanticweb.org/construction.owl#10K-50K"/>
+        <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hotel Construction</identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Ho002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#Ho002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Hotels"/>
+        <hasCost rdf:resource="http://www.semanticweb.org/construction.owl#1K-2K"/>
+        <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hotels and Villa</identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Hou001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#Hou001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Household"/>
+        <hasLocation rdf:resource="http://www.semanticweb.org/construction.owl#Battaramulla"/>
+        <isSupplierOf rdf:resource="http://www.semanticweb.org/construction.owl#S002"/>
+        <address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">700/10, Kaduwela Road, Thalangama North, Battaramulla , Sri Lanka.</address>
+        <city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Battaramulla</city>
+        <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GB Coatings</identifier>
+        <phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">114925719</phone>
+        <started rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-02-28T00:00:00Z</started>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#I001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#I001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Interior_Deco"/>
+        <hasCost rdf:resource="http://www.semanticweb.org/construction.owl#1K-2K"/>
+        <hasCost rdf:resource="http://www.semanticweb.org/construction.owl#1M-2M"/>
+        <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Solakro Interior Paint</identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#I002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#I002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Interior_Deco"/>
+        <hasCost rdf:resource="http://www.semanticweb.org/construction.owl#10K-30K"/>
+        <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Office Interior Solutions</identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Im001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#Im001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Importers"/>
+        <hasLocation rdf:resource="http://www.semanticweb.org/construction.owl#Kiribathgoda"/>
+        <isSupplierOf rdf:resource="http://www.semanticweb.org/construction.owl#W001"/>
+        <isSupplierOf rdf:resource="http://www.semanticweb.org/construction.owl#Wh001"/>
+        <address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">65, Iriyawetiya Road, Kiribathgoda, Sri Lanka</address>
+        <city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kiribathgoda</city>
+        <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anuja.fdo@gmail.com</email>
+        <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Civicon Engineering Services (Pvt) Ltd</identifier>
+        <phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0112909786</phone>
+        <registrationNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JH00578</registrationNumber>
+        <started rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-06-25T00:00:00Z</started>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Private</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Im002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#Im002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Importers"/>
+        <hasLocation rdf:resource="http://www.semanticweb.org/construction.owl#Kottawa"/>
+        <isSupplierOf rdf:resource="http://www.semanticweb.org/construction.owl#C002"/>
+        <isSupplierOf rdf:resource="http://www.semanticweb.org/construction.owl#I002"/>
+        <address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">342/D palanwaththa pannipitiya</address>
+        <city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pannipitiya</city>
+        <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gayanmeegalla@gmail.com</email>
+        <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SK Holdings</identifier>
+        <started rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-12-25T00:00:00Z</started>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Kiribathgoda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#Kiribathgoda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Gampaha"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Kolonnawa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#Kolonnawa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Colombo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Kottawa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#Kottawa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Colombo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#M001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#M001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Manufacturers"/>
+        <hasLocation rdf:resource="http://www.semanticweb.org/construction.owl#Battaramulla"/>
+        <isSupplierOf rdf:resource="http://www.semanticweb.org/construction.owl#H002"/>
+        <address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">532/3 Madiwela Road, Thalawathugoda</address>
+        <city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Battaramulla</city>
+        <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">projects@amberengineeringsl.com</email>
+        <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amber Engineering Consortium (Pvt) Ltd</identifier>
+        <phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0114387766</phone>
+        <registrationNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PV83907</registrationNumber>
+        <started rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-06-25T00:00:00Z</started>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Private</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#M002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#M002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Manufacturers"/>
+        <hasLocation rdf:resource="http://www.semanticweb.org/construction.owl#Nugegoda"/>
+        <isSupplierOf rdf:resource="http://www.semanticweb.org/construction.owl#H001"/>
+        <isSupplierOf rdf:resource="http://www.semanticweb.org/construction.owl#I001"/>
+        <address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">34, Pepiliyana Road, Nugegoda</address>
+        <city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nugegoda</city>
+        <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kalharibuilders@sltnet.lk</email>
+        <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kalhari Builders (Pvt) Ltd</identifier>
+        <phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0112852365</phone>
+        <registrationNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BG512</registrationNumber>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Private</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Nugegoda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#Nugegoda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Colombo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Pugoda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#Pugoda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Gampaha"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Rathmalana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#Rathmalana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Colombo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#S001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#S001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Steel_Building"/>
+        <hasCost rdf:resource="http://www.semanticweb.org/construction.owl#10K-30K"/>
+        <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Factory Building</identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#S002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#S002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Steel_Building"/>
+        <hasCost rdf:resource="http://www.semanticweb.org/construction.owl#10K-50K"/>
+        <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Steel Buildings</identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Seethawaka -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#Seethawaka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Colombo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#T001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#T001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#TurnKey"/>
+        <hasCost rdf:resource="http://www.semanticweb.org/construction.owl#1K-2K"/>
+        <hasLocation rdf:resource="http://www.semanticweb.org/construction.owl#Kiribathgoda"/>
+        <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Turnkey Building Refurbishment project</identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#T002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#T002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#TurnKey"/>
+        <hasCost rdf:resource="http://www.semanticweb.org/construction.owl#2M-5M"/>
+        <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Turnkey Projects</identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Thimbirigasyaya -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#Thimbirigasyaya">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Colombo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#V001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#V001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Vendors"/>
+        <isSupplierOf rdf:resource="http://www.semanticweb.org/construction.owl#Ho002"/>
+        <isSupplierOf rdf:resource="http://www.semanticweb.org/construction.owl#W002"/>
+        <address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">No. 547, Old Gampola Rd. Peradeniya Sri Lanka.</address>
+        <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solidlanka@yahoo.com</email>
+        <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Solid Lanka Engineering (Pvt) Ltd</identifier>
+        <phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">773599530</phone>
+        <started rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-06-01T00:00:00Z</started>
+        <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Private</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Veyangoda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#Veyangoda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Gampaha"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#W001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#W001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Ware_House"/>
+        <hasCost rdf:resource="http://www.semanticweb.org/construction.owl#10K-30K"/>
+        <hasLocation rdf:resource="http://www.semanticweb.org/construction.owl#Gampaha"/>
+        <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Steel Warehouse</identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#W002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#W002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Ware_House"/>
+        <hasCost rdf:resource="http://www.semanticweb.org/construction.owl#1K-2K"/>
+        <hasLocation rdf:resource="http://www.semanticweb.org/construction.owl#Pugoda"/>
+        <hasLocation rdf:resource="http://www.semanticweb.org/construction.owl#Rathmalana"/>
+        <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Factories &amp; Warehouses</identifier>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Wh001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#Wh001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Wholesalers"/>
+        <hasLocation rdf:resource="http://www.semanticweb.org/construction.owl#Battaramulla"/>
+        <isSupplierOf rdf:resource="http://www.semanticweb.org/construction.owl#T001"/>
+        <isSupplierOf rdf:resource="http://www.semanticweb.org/construction.owl#T002"/>
+        <address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16/5,Pipe Road,Thalangama North,Battaramulla.</address>
+        <city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Battaramulla</city>
+        <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green Home International (Pvt) Ltd</identifier>
+        <phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">777226565</phone>
+        <started rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-12-01T00:00:00Z</started>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#Wh002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#Wh002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Wholesalers"/>
+        <hasLocation rdf:resource="http://www.semanticweb.org/construction.owl#Kottawa"/>
+        <isSupplierOf rdf:resource="http://www.semanticweb.org/construction.owl#Ho001"/>
+        <address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kottawa</address>
+        <city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kottawa</city>
+        <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gihan@yahoo.com</email>
+        <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gihan Holding</identifier>
+        <registrationNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GGh0089</registrationNumber>
+        <started rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-01-01T00:00:00Z</started>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#1K-2K -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#1K-2K">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Low"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#1M-2M -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#1M-2M">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#High"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#10K-30K -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#10K-30K">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Medium"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#10K-50K -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#10K-50K">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Medium"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#2M-5M -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#2M-5M">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#High"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#6M-10M -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#6M-10M">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#High"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Academic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Architectural_Designing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Building_Maintenance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Consultancy_Services"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Drafting_and_Plotting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Estimation_Contract_Management_and_Quantity_Surveying"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#House_Plans"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Housing_Loans"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Insurance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Interior_Designing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Land_Surveying"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Legal_and_Local_Authority_Approvals"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Manpower_Outsourcing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Model_Design"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Project_Management"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Structural_and_Civil_Engineering"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#3D_Visualization"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Academic_and_Professional"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Fabrications_Installations_and_Wood_works"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#General_Constructions"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Geotechnical"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Low_Voltage_Systems"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Major_Constructions"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Mechanical_Electrical_and_Plumbing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Quality_and_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Specialized_Services"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Acoustic_Insulation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Air_and_Noise_Pollution_Control_System"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Day-lighting_and_Shading"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Demolition_and_Clearing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Grouting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Groynes_and_Revetments"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Impregnation_Treatment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Irrigation_and_Drainage_Canals"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Landscaping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Painting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Pest_Control"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Pipe_Laying"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Pristine_Service"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Property_Management"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Rain_Fall_Data_Solutions"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Renovation_Retrofitting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Road_Marking"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Slab"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Soaring"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Sound_Insulation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Specialized_Garden"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Storm_Water_Disposal_and_Land_Drainage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Swimming_Pools_Ponds_and_water_features"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Thermal_Insulation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Transport"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Waterproofing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Wood_Carvings"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Airport_Construction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Apartments"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Bridge"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Buildings"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Highway"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Industrial"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Infrastructure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Marine_Engineering"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Storage_Tanks_and_Pressure_Vessels"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Telecommunication"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Water_supply_and_Sewerage"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Aluminium_Glass_and_Finishes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Block_Paving"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Carpentry_and_Joinery"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Ceiling"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Container_Conversions"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Flooring_and_Walls"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Furniture_Fixtures_and_Equipment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Machine_Installation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Moulding"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Partition"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Roofing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Steel_fabrications_and_Installations"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Ampara"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Batticaloa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Trincomalee"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Architecture_and_Planning"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Engineers_Managers_and_Consultants"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Estimating_and_Cost_Management"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Non_Skilled_Workers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Skilled_Workers"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Backup_Power_systems"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Boilers_and_Steam_Generators"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Electrical_Installations"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Fire_Detection_and_Protection"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Gas_Liquid_Piping_Systems"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#HVAC_Systems"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Lifts_Escalators_and_Travellators"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Lightning_Protection"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Plumbing_and_Drainage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Solar_and_Renewable_energy_Solutions"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Transmission_Grid"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Transmission_Line"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Wastewater_Sewerage_and_Garbage_Treatment"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Bathware"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Ceiling"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Cement_Products"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Doors_Windows_and_Accessories"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Flooring_and_Finishing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Furniture"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Gardening_and_Landscaping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#HVAC_and_Mechanical"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Interior_Decor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Lighting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Low_Voltage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Other_Products"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Pantry_Fittings"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Plumbing_Products"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Ponds_Pools_and_Water_Features"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Properties_and_Lands"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Roofing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Safety"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Security_Systems"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Specialized_Products"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Stainless_Steel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Timber_Products"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Wall_Deco"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Bathware"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Ceiling"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Cement_Products"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Flooring_and_Finishing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Furniture"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Gardening_and_Landscaping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#HVAC_and_Mechanical"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Interior_Decor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Lighting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Low_Voltage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Other_Products"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Pantry_Fittings"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Ponds_Pools_and_Water_Features"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Properties_and_Lands"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Roofing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Safety"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Security_Systems"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Specialized_Products"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Stainless_Steel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Wall_Deco"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Building_Management_Systems"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#CCTV_Surveillance_Systems"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Data_and_Telephone"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#PA_and_Pipe_Music_Systems"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Satellite_Cable_TV_Systems"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Carpentry_Tools"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Construction_Site_Tools"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Cutting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Drilling"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Formwork_Shuttering_and_Scaffoldings"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Gardening_and_Outdoor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Hand_Tools"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Measuring_Tools"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Steel_Aluminium_Fabrication_Tools"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Testting_Equpments"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Cement_and_Cement_Products"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Construction_Chemicals"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Construction_Steel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Electrical_and_Power"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Finishing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Glass_Stainless_Steel_and_Aluminium"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Hardware"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Paints"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Plumbing_and_Piping"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Raw_Materials"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Timber"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Cement_and_Concrete"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Crushing_Blasting_and_Demolition"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Earth_Moving_and_Compaction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Lifting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Power_Machines"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Road_Construction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Transportation"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Central"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Eastern"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#North_Central"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#North_Western"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Northern"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Sabaragamuwa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Southern"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Uva"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Western"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Colombo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Gampaha"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Kalutara"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Commercial"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Homes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Hotels"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Interior_Deco"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Steel_Building"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#TurnKey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Ware_House"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Concrete_Compression_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Crack_Surveying_and_Monitoring"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Dry_Film"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Inclinometers_installation_and_monitoring"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Laboratory"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Load_Test"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Noise_Level_Monitoring"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Non-destructive_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Piezometer_installation_and_monitoring"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Pile_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Pullout"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Quality_Control"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Rebound_Hammer_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Settlement_monitoring"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Soil_Investigation_and_Testing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Vibration_Monitoring"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#CostRange"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#DistanceRange"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#TimeRange"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Distributors"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Importers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Manufacturers"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Vendors"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Wholesalers"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Dredging"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Earth_Retaining_and_Soil_Nailing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Mining"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Piling"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Rock_Blasting_Services"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Soil_Stabilization_Ground_Improvements_and_Excavation"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#FamilyOffice"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#HoldingCompany"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#PrivateEquity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#StrategicBuyers"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Galle"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Hambantota"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Matara"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#High"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Low"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Medium"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Jaffna"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Kilinochchi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Mannar"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Mullaitivu"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Vavuniya"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Kandy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Matale"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/construction.owl#Nuwara_Eliya"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
