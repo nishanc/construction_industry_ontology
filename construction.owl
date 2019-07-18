@@ -26,6 +26,22 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/construction.owl#accessTender">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#Supplier"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/construction.owl#Tenders"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#canReview -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/construction.owl#canReview">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/construction.owl#getReview"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#Buyer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#Supplier"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/construction.owl#Buyer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/construction.owl#Supplier"/>
     </owl:ObjectProperty>
     
 
@@ -34,6 +50,21 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/construction.owl#getQuotation">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#Buyer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/construction.owl#Quotation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#getReview -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/construction.owl#getReview">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#Buyer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#Supplier"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/construction.owl#Buyer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/construction.owl#Supplier"/>
     </owl:ObjectProperty>
     
 
@@ -43,6 +74,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/construction.owl#hasBuyer">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/construction.owl#isBuyerOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#ConstructionMarket"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/construction.owl#Buyer"/>
     </owl:ObjectProperty>
     
 
@@ -51,6 +84,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/construction.owl#hasCost">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#ConstructionMarket"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/construction.owl#CostRange"/>
     </owl:ObjectProperty>
     
 
@@ -59,13 +94,19 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/construction.owl#hasDistance">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#ConstructionMarket"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/construction.owl#DistanceRange"/>
     </owl:ObjectProperty>
     
 
 
     <!-- http://www.semanticweb.org/construction.owl#hasLocation -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/construction.owl#hasLocation"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/construction.owl#hasLocation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#ConstructionMarket"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/construction.owl#Location"/>
+    </owl:ObjectProperty>
     
 
 
@@ -74,6 +115,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/construction.owl#hasSupplier">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/construction.owl#isSupplierOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#ConstructionMarket"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/construction.owl#Supplier"/>
     </owl:ObjectProperty>
     
 
@@ -82,6 +125,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/construction.owl#hasTime">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#ConstructionMarket"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/construction.owl#TimeRange"/>
     </owl:ObjectProperty>
     
 
@@ -90,6 +135,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/construction.owl#isBuyerOf">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#Buyer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/construction.owl#ConstructionMarket"/>
     </owl:ObjectProperty>
     
 
@@ -98,6 +145,8 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/construction.owl#isSupplierOf">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#Supplier"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/construction.owl#ConstructionMarket"/>
     </owl:ObjectProperty>
     
 
@@ -135,6 +184,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/construction.owl#discription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/construction.owl#discription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#Buyer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#Supplier"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/construction.owl#email -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/construction.owl#email">
@@ -157,6 +215,16 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#Tenders"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Name of the company, business</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#imageURL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/construction.owl#imageURL">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#Buyer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/construction.owl#Supplier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -418,6 +486,18 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#canReview"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#Supplier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#getReview"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#Supplier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2188,6 +2268,18 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#canReview"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#Buyer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/construction.owl#getReview"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/construction.owl#Buyer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2523,8 +2615,10 @@
         <isSupplierOf rdf:resource="http://www.semanticweb.org/construction.owl#Ho001"/>
         <address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">61, Rodrigo Place, Colombo 15, Sri Lanka</address>
         <city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Colombo 15</city>
+        <discription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A synonym for quality, speed and care, This is one of the most trusted construction companies in South Asia, delivering high-quality buildings and infrastructure for over three decades.</discription>
         <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unieff@sltnet.lk</email>
         <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unieff (Pvt) Ltd</identifier>
+        <imageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://content3.jdmagicbox.com/comp/ernakulam/w4/0484px484.x484.130223184612.y5w4/catalogue/horizon-group-hi-tech-fabricating-company-pvt-ltd-kaloor-ernakulam-fabricators-3jczksj.jpg</imageURL>
         <phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0114884860</phone>
         <registrationNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NB0055</registrationNumber>
     </owl:NamedIndividual>
@@ -2545,6 +2639,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#FamilyOffice"/>
         <isBuyerOf rdf:resource="http://www.semanticweb.org/construction.owl#Wh002"/>
         <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nishan Chathuranga</identifier>
+        <phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">987987987987</phone>
     </owl:NamedIndividual>
     
 
@@ -2662,8 +2757,10 @@
         <isSupplierOf rdf:resource="http://www.semanticweb.org/construction.owl#Wh001"/>
         <address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">65, Iriyawetiya Road, Kiribathgoda, Sri Lanka</address>
         <city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kiribathgoda</city>
+        <discription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From concept to conclusion, This continues to work with an array of stakeholders -- from investors and developers to public agencies and regional communities. As the largest construction company</discription>
         <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anuja.fdo@gmail.com</email>
         <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Civicon Engineering Services (Pvt) Ltd</identifier>
+        <imageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://content3.jdmagicbox.com/comp/hyderabad/q4/040pxx40.xx40.120208143538.s3q4/catalogue/united-consultancy-service-india-pvt-ltd-somajiguda-hyderabad-company-registration-consultants-19ul573.jpg</imageURL>
         <phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0112909786</phone>
         <registrationNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JH00578</registrationNumber>
         <started rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-06-25T00:00:00Z</started>
@@ -2681,8 +2778,10 @@
         <isSupplierOf rdf:resource="http://www.semanticweb.org/construction.owl#I002"/>
         <address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">342/D palanwaththa pannipitiya</address>
         <city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pannipitiya</city>
+        <discription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">its work has enriched all sectors of the economy, from healthcare and hospitality to transport and water supply in bringing to life over 400 multi-disciplinary projects.</discription>
         <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gayanmeegalla@gmail.com</email>
         <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SK Holdings</identifier>
+        <imageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://content3.jdmagicbox.com/comp/ernakulam/w4/0484px484.x484.130223184612.y5w4/catalogue/horizon-group-hi-tech-fabricating-company-pvt-ltd-kaloor-ernakulam-fabricators-zu0pi4.jpg</imageURL>
         <started rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-12-25T00:00:00Z</started>
     </owl:NamedIndividual>
     
@@ -2716,12 +2815,14 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#M001">
         <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Manufacturers"/>
-        <hasLocation rdf:resource="http://www.semanticweb.org/construction.owl#Battaramulla"/>
+        <hasLocation rdf:resource="http://www.semanticweb.org/construction.owl#Colombo"/>
         <isSupplierOf rdf:resource="http://www.semanticweb.org/construction.owl#H002"/>
         <address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">532/3 Madiwela Road, Thalawathugoda</address>
         <city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Battaramulla</city>
+        <discription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This has set global benchmarks in project delivery and sustainability, from completing one of the fastest Tsunami rehabilitation projects, to building the world’s tallest vertical garden and the first LEED Platinum apparel factory.</discription>
         <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">projects@amberengineeringsl.com</email>
         <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amber Engineering Consortium (Pvt) Ltd</identifier>
+        <imageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.amskconstruction.com/images/product_services/pic_2.jpg</imageURL>
         <phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0114387766</phone>
         <registrationNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PV83907</registrationNumber>
         <started rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-06-25T00:00:00Z</started>
@@ -2739,8 +2840,10 @@
         <isSupplierOf rdf:resource="http://www.semanticweb.org/construction.owl#I001"/>
         <address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">34, Pepiliyana Road, Nugegoda</address>
         <city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nugegoda</city>
+        <discription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The company is anchored by an extensive resource base and driven by a dynamic workforce of over 12,000. Centered on an unwavering vision for sustainable development, Maga is helping reshape the evolving landscapes around us.</discription>
         <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kalharibuilders@sltnet.lk</email>
         <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kalhari Builders (Pvt) Ltd</identifier>
+        <imageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://content1.jdmagicbox.com/comp/thiruvananthapuram/g5/0471px471.x471.100715135747.b2g5/catalogue/arjun-amaravathi-chits-pvt-ltd-pazhavangadi-thiruvananthapuram-financial-advisers-3m3a6m5.jpg</imageURL>
         <phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0112852365</phone>
         <registrationNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BG512</registrationNumber>
         <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Private</type>
@@ -2836,11 +2939,41 @@
         <isSupplierOf rdf:resource="http://www.semanticweb.org/construction.owl#Ho002"/>
         <isSupplierOf rdf:resource="http://www.semanticweb.org/construction.owl#W002"/>
         <address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">No. 547, Old Gampola Rd. Peradeniya Sri Lanka.</address>
+        <discription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">team commited to provide high quality products and services, that confirm to the requirements of our customers in the execution of construction projects and in the manufacture of Ready Mix Concrete.</discription>
         <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solidlanka@yahoo.com</email>
         <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Solid Lanka Engineering (Pvt) Ltd</identifier>
+        <imageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://3.imimg.com/data3/MV/OP/MY-10355294/garuda-skyfield-500x500.jpg</imageURL>
         <phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">773599530</phone>
         <started rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-06-01T00:00:00Z</started>
         <type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Private</type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#V002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#V002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Vendors"/>
+        <isSupplierOf rdf:resource="http://www.semanticweb.org/construction.owl#Ho002"/>
+        <isSupplierOf rdf:resource="http://www.semanticweb.org/construction.owl#W002"/>
+        <address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">colombo</address>
+        <discription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To manage our organization effectively &amp; efficiently, we aim to recruit &amp; retain highly motivated, competent people as well as we stimulate their full involvement in order to develop their abilitities for the benifit of the individual &amp; our organization.</discription>
+        <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ariasinghe constructions</identifier>
+        <imageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGlCPzmXdB4eX1HXBC5zhyS3i7m9WlzMKD0yOtEPVLNQzfIyC5SA</imageURL>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/construction.owl#V003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/construction.owl#V003">
+        <rdf:type rdf:resource="http://www.semanticweb.org/construction.owl#Vendors"/>
+        <isSupplierOf rdf:resource="http://www.semanticweb.org/construction.owl#Ho001"/>
+        <isSupplierOf rdf:resource="http://www.semanticweb.org/construction.owl#W002"/>
+        <address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kiribathgoda colombo</address>
+        <discription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To optimize performance through effective process management, we manage our activities &amp; associated resources as a planned process to produce the right products at right time with a minimum wastage while aiming to maximize efficiency.</discription>
+        <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kamalanath Holdings</identifier>
+        <imageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_400,q_75,w_300/http://res.cloudinary.com/simpleview/image/upload/v1480357368/clients/asheville/westall_building2_7287b544-8d49-43d6-b7e5-b66fdc6e0f5e.jpg</imageURL>
     </owl:NamedIndividual>
     
 
@@ -2885,7 +3018,9 @@
         <isSupplierOf rdf:resource="http://www.semanticweb.org/construction.owl#T002"/>
         <address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16/5,Pipe Road,Thalangama North,Battaramulla.</address>
         <city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Battaramulla</city>
+        <discription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To produce desired results, we measure our performance in our key activities based on the evaluation of collected data &amp; information to make informed &amp; effective decisions on how to improve the processes.</discription>
         <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green Home International (Pvt) Ltd</identifier>
+        <imageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://4.bp.blogspot.com/_s2jU7girbyM/SBlxmaef-vI/AAAAAAAAAc0/MVoGBzv4X-0/s400/Motorolla+Rock+View+Heights.jpg</imageURL>
         <phone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">777226565</phone>
         <started rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-12-01T00:00:00Z</started>
     </owl:NamedIndividual>
@@ -2900,8 +3035,10 @@
         <isSupplierOf rdf:resource="http://www.semanticweb.org/construction.owl#Ho001"/>
         <address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kottawa</address>
         <city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kottawa</city>
+        <discription rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Strive to ensure that all employees, contractors, customers and members of the public are aware of the environmental impacts of our business and understand how we can work together in order to meet the needs of our business in a safe and sustainable manner.</discription>
         <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gihan@yahoo.com</email>
         <identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gihan Holding</identifier>
+        <imageURL rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.arrkeurope.com/fileadmin/_processed_/c/f/csm_IMG-20181107-WA0022_d94400cf4b.jpg</imageURL>
         <registrationNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GGh0089</registrationNumber>
         <started rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-01-01T00:00:00Z</started>
     </owl:NamedIndividual>
